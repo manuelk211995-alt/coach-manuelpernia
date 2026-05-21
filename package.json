@@ -1,0 +1,22 @@
+{
+  "name": "coach-manuelpernia",
+  "private": true,
+  "description": "Plataforma personal del entrenador de voleibol Manuel Pernia",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "check-types": "turbo check-types"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "turbo": "^2.5.0",
+    "typescript": "^5.8.0"
+  },
+  "packageManager": "npm@11.9.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
