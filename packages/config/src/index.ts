@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "Manuel Pernia",
-  title: "Coach de Voleibol Profesional",
+  name: "VolleySocial",
+  title: "Red Social de Voleibol",
   description:
-    "Plataforma oficial con programas de entrenamiento, calendario de sesiones y recursos para voleibolistas.",
-  email: "hola@manuelpernia.com",
+    "La red social para la comunidad de voleibol. Comparte logros, noticias y conecta con entrenadores y jugadores.",
+  email: "hola@volleysocial.com",
   social: {
-    instagram: "https://instagram.com/manuelpernia",
-    youtube: "https://youtube.com/@manuelpernia",
-    tiktok: "https://tiktok.com/@manuelpernia",
+    instagram: "https://instagram.com/volleysocial",
+    youtube: "https://youtube.com/@volleysocial",
+    tiktok: "https://tiktok.com/@volleysocial",
   },
 };

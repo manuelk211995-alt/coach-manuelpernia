@@ -1,3 +1,4 @@
+import { AnimateIn } from "./AnimateIn";
 import styles from "./Testimonials.module.css";
 
 const testimonials = [
@@ -22,27 +23,27 @@ export function Testimonials() {
   return (
     <section className={styles.section} id="testimonials">
       <div className={styles.container}>
-        <div className={styles.header}>
-          <h2 className={styles.tag}>Testimonios</h2>
-          <h3 className={styles.title}>
-            Lo que dicen los atletas
-          </h3>
-        </div>
+        <AnimateIn>
+          <div className={styles.header}>
+            <h2 className={styles.tag}>Testimonios</h2>
+            <h3 className={styles.title}>Lo que dicen los atletas</h3>
+          </div>
+        </AnimateIn>
         <div className={styles.grid}>
-          {testimonials.map((t) => (
-            <article key={t.name} className={styles.card}>
-              <div className={styles.quote}>&ldquo;</div>
-              <p className={styles.text}>{t.text}</p>
-              <div className={styles.author}>
-                <div className={styles.avatar}>
-                  {t.name.charAt(0)}
+          {testimonials.map((t, i) => (
+            <AnimateIn key={t.name}>
+              <article className={styles.card}>
+                <div className={styles.quote}>&ldquo;</div>
+                <p className={styles.text}>{t.text}</p>
+                <div className={styles.author}>
+                  <div className={styles.avatar}>{t.name.charAt(0)}</div>
+                  <div>
+                    <p className={styles.name}>{t.name}</p>
+                    <p className={styles.role}>{t.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className={styles.name}>{t.name}</p>
-                  <p className={styles.role}>{t.role}</p>
-                </div>
-              </div>
-            </article>
+              </article>
+            </AnimateIn>
           ))}
         </div>
       </div>

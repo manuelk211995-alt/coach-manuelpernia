@@ -1,6 +1,6 @@
 .section {
   padding: 6rem 2rem;
-  background: var(--color-bg-alt);
+  background: var(--color-bg);
 }
 
 .container {
@@ -15,20 +15,21 @@
 }
 
 .tag {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-accent);
+  color: var(--color-text-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   margin-bottom: 0.75rem;
 }
 
 .title {
   font-size: clamp(1.75rem, 3vw, 2.5rem);
-  font-weight: 800;
-  color: var(--color-dark);
+  font-weight: 700;
+  color: var(--color-primary);
   margin-bottom: 1rem;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .description {
@@ -44,30 +45,36 @@
 }
 
 .card {
-  background: var(--color-bg);
+  background: var(--color-surface);
   border-radius: var(--radius);
   padding: 2rem;
-  box-shadow: var(--shadow);
-  transition: all 0.3s;
+  border: 1px solid var(--color-border);
+  transition: all 0.2s;
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  border-color: var(--color-border-hover);
   box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
 .icon {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
   margin-bottom: 0.25rem;
+  letter-spacing: -0.03em;
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
 }
 
 .cardText {
@@ -82,14 +89,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .feature {
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   font-weight: 500;
-  color: var(--color-primary);
-  background: rgba(30, 64, 175, 0.08);
+  color: var(--color-text-muted);
+  background: var(--color-bg);
   padding: 0.25rem 0.75rem;
   border-radius: 100px;
+  border: 1px solid var(--color-border);
 }

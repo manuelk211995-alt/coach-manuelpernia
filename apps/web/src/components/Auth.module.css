@@ -1,0 +1,264 @@
+.section {
+  padding: 6rem 2rem;
+  background: var(--color-bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.toggle {
+  display: flex;
+  margin-bottom: 2rem;
+  border-radius: 100px;
+  background: var(--color-bg);
+  padding: 0.25rem;
+  border: 1px solid var(--color-border);
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 0.625rem 1rem;
+  border: none;
+  border-radius: 100px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: var(--color-text-light);
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.toggleBtnActive {
+  background: var(--color-primary);
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+  margin-bottom: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.input {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9375rem;
+  font-family: inherit;
+  color: var(--color-primary);
+  background: var(--color-surface);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.input:focus {
+  border-color: var(--color-purple);
+  box-shadow: 0 0 0 3px var(--color-purple-glow);
+}
+
+.serverError {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+  font-size: 0.875rem;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.5rem;
+}
+
+.inputError {
+  border-color: #ef4444;
+}
+
+.inputError:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+.error {
+  font-size: 0.75rem;
+  color: #ef4444;
+}
+
+.submitBtn {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.875rem 2rem;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+.submitBtn:hover {
+  background: #000;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.dividerLine {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border);
+}
+
+.dividerText {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: 100px;
+  background: var(--color-surface);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.socialBtn:hover {
+  border-color: var(--color-border-hover);
+  background: var(--color-bg);
+}
+
+.forgot {
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.forgotLink {
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  transition: color 0.2s;
+}
+
+.forgotLink:hover {
+  color: var(--color-purple);
+}
+
+.terms {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.termsLink {
+  color: var(--color-purple);
+  font-weight: 500;
+}
+
+.success {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.successIcon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--color-purple-light);
+  color: var(--color-purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 1.5rem;
+}
+
+.successTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.successText {
+  font-size: 0.9375rem;
+  color: var(--color-text-light);
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 5rem 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+}

@@ -1,10 +1,16 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Navbar } from "@/components/Navbar";
 import "./globals.css";
 
+const inter = Inter({
+  subsets: ["latin"],
+});
+
 export const metadata: Metadata = {
-  title: "Manuel Pernia | Coach de Voleibol",
+  title: "VolleySocial | Red Social de Voleibol",
   description:
-    "Plataforma oficial de Manuel Pernia, entrenador profesional de voleibol. Programas de entrenamiento, calendario, recursos y más.",
+    "La red social para la comunidad de voleibol. Comparte logros, noticias y conecta con entrenadores y jugadores de todo el mundo.",
 };
 
 export default function RootLayout({
@@ -14,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
